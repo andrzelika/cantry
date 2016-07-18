@@ -1,0 +1,44 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/dict.css' %}">
+        <title> -====== CanTry =======⊃--< </title>
+    </head>
+<body>
+ <div class="page-header">
+        <h1><a  href="/"> -====== CanTry =======⊃--< </a></h1>
+    </div>
+    <!-- Główna tabela odpowiadająca za układ elementów strony -->
+    <table width="100%" cellspacing="0" cellpadding="10">
+    <tr>
+    <!-- Lewe menu -->
+    <td width=210 align="left" valign="top">
+    <div class="left-menu">
+        <ul>
+            <li>Python</li>
+            {% block leftlinks %}
+            {% endblock %}
+        </ul>
+    </div>
+    </td>
+    <!-- Część główna -->
+    <td align="left" valign="top">
+    <div class="main-part">
+        {% block content %}
+        {% endblock %}
+    </div>
+    </td>
+    <!-- Prawe menu -->
+    <td align="right" valign="top">
+    <div class="left-menu">
+        <ul>
+            <li>Linki zewnętrzne</a></li>
+            {% block rightlinks %}
+            {% endblock %}
+        </ul>
+    </td>
+    </tr>
+
+</body>
+</html>

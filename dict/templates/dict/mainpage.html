@@ -1,0 +1,25 @@
+{% extends 'dict/base.html' %}
+{% load staticfiles %}
+
+{% block leftlinks %}
+    {% for thing in things %}
+        <li><a href="/{{thing.code}}">{{thing.thing}}</a></li>
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+<div>
+    <h1>Siemanko
+    <br><br> Co Ty wiesz o zabijaniu?</h1>
+     <img src='static/python.jpg' alt="python_img" style="width:500px;height:400px;" border=2px>
+</div>
+<div>
+
+</div>
+{% endblock content %}
+
+{% block rightlinks %}
+    {% for link in links %}
+        <li><a href={{link.address}} target="_blank">{{link.name}}</a></li>
+    {% endfor %}
+{% endblock %}

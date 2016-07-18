@@ -1,0 +1,26 @@
+{% extends 'dict/base.html' %}
+
+{% block leftlinks %}
+    {% for thing in things %}
+        <li><a href="/{{thing.code}}">{{thing.thing}}</a></li>
+    {% endfor %}
+{% endblock %}
+
+{% block content %}
+    {% for i in dictionary %}
+    <div>
+        <h1>{{ i.thing }}</h1>
+        <pre>{{ i.definition }}</pre>
+        <br>
+    </div>
+    <div class="terminal">
+        <pre>{{ i.example }}</pre>
+    </div>
+    {% endfor %}
+{% endblock content %}
+
+{% block rightlinks %}
+    {% for link in links %}
+        <li><a href={{link.address}} target="_blank">{{link.name}}</a></li>
+    {% endfor %}
+{% endblock %}

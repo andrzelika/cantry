@@ -1,0 +1,85 @@
+.page-header {
+    background-color: #263E59;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #FFF896;
+    font-size: 32pt;
+    text-decoration: none;
+}
+.terminal {
+    color: #FFF896;
+    background-color: #263E59;
+}
+
+.left-menu ul{
+	margin-top: 10;
+    padding: 0;
+	width: 200px;
+	list-style-type: none;
+}
+
+.left-menu ul li {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    padding: 2px 8px;
+    background-color: #263E59;
+    background-repeat: no-repeat;
+    background-size: 200px 50px;
+    display: block;
+}
+
+.left-menu ul li a {
+	text-decoration: none;
+	color: white;
+    font-weight: 400;
+	padding: 8px 8px;
+	background-color: #263E59;
+    background-repeat: no-repeat;
+	background-size: 200px 50px;
+    display: block;
+}
+
+.left-menu ul li a:visited {
+	color: white;
+}
+
+.left-menu ul li a:hover, .left-menu ul li .current {
+	color: #FFF896;
+	background-color: #1B2E45;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 60pt;
+    margin-top: 5px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.content {
+    margin-left:    40px;
+}
+
+.main-part {
+    margin-bottom: 70px;
+}
+
+.main-part h1 {
+    color: #263E59;
+    font-size: 20pt;
+    font-family: 'Lobster';
+}
+
+h1 a {
+    color: green;
+    font-family: 'Lobster';
+}
+
+body {
+    padding-left: 15px;
+}
